@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jiarui.znxj.activity.UpdateNameActivity">
+
+    <include layout="@layout/common_layout_title" />
+
+    <EditText
+        android:id="@+id/update_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/update_edit"
+        android:hint="请输入您的姓名"
+        android:textColorHint="@color/color_gray"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@drawable/line" />
+</LinearLayout>

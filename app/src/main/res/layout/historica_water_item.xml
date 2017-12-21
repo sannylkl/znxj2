@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D6D6D6"
+        android:stretchColumns="0,1,2">
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/hiwater_item_time"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="时间"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hiwater_item_jianyu"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="降雨量"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/hiwater_item_qushi"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+               />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

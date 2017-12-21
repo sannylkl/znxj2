@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding_medium">
+
+        <ImageView
+            android:id="@+id/frg_message_gonggao_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/frg_message_gonggao_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/frg_message_gonggao_item_img"
+            android:ellipsize="end"
+            android:paddingLeft="@dimen/common_padding_large"
+            android:paddingRight="@dimen/common_padding_large"
+            android:singleLine="true"
+            android:text="跨境电商平台下保税区存在问题"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/common_font_large" />
+
+        <TextView
+            android:id="@+id/frg_message_gonggao_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frg_message_gonggao_item_img"
+            android:layout_below="@id/frg_message_gonggao_item_title"
+            android:layout_toRightOf="@id/frg_message_gonggao_item_img"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_padding_large"
+            android:singleLine="true"
+            android:text="2014年3月，新修订的《中华人名共和国消费者权益》"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/common_font_medium" />
+    </RelativeLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+</LinearLayout>

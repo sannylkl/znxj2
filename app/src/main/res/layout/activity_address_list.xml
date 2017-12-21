@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.jiarui.znxj.activity.AddressListActivity">
+
+    <include layout="@layout/common_layout_title" />
+
+    <EditText
+        android:id="@+id/address_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/min_height_min"
+        android:layout_marginLeft="@dimen/juli_15dp"
+        android:layout_marginRight="@dimen/juli_15dp"
+        android:layout_marginTop="@dimen/juli_15dp"
+        android:background="@drawable/phone_list_draw"
+        android:hint="查找联系人"
+        android:paddingLeft="@dimen/juli_15dp"
+        android:textColorHint="@color/color_gray"
+        android:textCursorDrawable="@drawable/line"
+        android:textSize="@dimen/text_15sp" />
+
+    <include layout="@layout/common_listview" />
+
+</LinearLayout>

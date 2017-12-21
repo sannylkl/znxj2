@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/color_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/library_name"
+            android:drawablePadding="10dp"
+            android:text="水库名称"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/reinfo_skmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:text="水库名称"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reinfo_skfzr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:drawableLeft="@mipmap/unfold"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:text="水库负责人"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:text="王二"
+            android:textColor="#9B9B9B"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+    <View style="@style/style_line_horizontal"
+        android:layout_marginLeft="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:drawableLeft="@mipmap/time_icon"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="水库成立时间"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/reinfo_skclsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="2000年7月22日"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+    <View style="@style/style_line_horizontal"
+        android:layout_marginLeft="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:drawableLeft="@mipmap/library_info"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:text="水库简介"
+            android:textColor="#555555"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/reinfo_ckjj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:text="位于湾里区风景"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+</LinearLayout>

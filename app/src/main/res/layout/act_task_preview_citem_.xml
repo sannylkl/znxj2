@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!--异常问题-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/abnormal_nomar"
+                android:drawablePadding="5dp"
+                android:text="异常问题"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:id="@+id/rules_ycwt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:text="有渗水"
+                android:textColor="#989898"
+                android:textSize="12sp" />
+
+
+            <!--设备运行状况-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/device_nomar"
+                android:drawablePadding="5dp"
+                android:text="设备运行状况"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_15sp" />
+
+
+            <TextView
+                android:id="@+id/rules_sbzk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:text="正常"
+                android:textColor="#989898"
+                android:textSize="12sp" />
+            <!--重复问题-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/repeat_icon"
+                android:drawablePadding="5dp"
+                android:text="重复问题"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:id="@+id/rules_cfwt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:text="有"
+                android:textColor="#989898"
+                android:textSize="12sp" />
+            <!--其它描述-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="@dimen/juli_15dp"
+                android:drawableLeft="@mipmap/describe_icon"
+                android:drawablePadding="5dp"
+                android:text="其它描述"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:id="@+id/rules_qtms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:text="有渗水"
+                android:textColor="#989898"
+                android:textSize="12sp" />
+
+            <!--照片-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/picture_icon"
+                android:drawablePadding="5dp"
+                android:text="照片"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_15sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/previe_recycler_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:overScrollMode="never"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <!--视频-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:drawableLeft="@mipmap/picture_icon"
+                android:drawablePadding="5dp"
+                android:text="视频"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_15sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/previe_recycler_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:overScrollMode="never"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="0dp" />
+            <!--录音-->
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:drawableLeft="@mipmap/record_nomar"
+                android:drawablePadding="5dp"
+                android:text="录音"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_15sp" />
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/img_play"
+                android:padding="3dp"
+                android:layout_marginRight="@dimen/text_width2"
+                android:layout_width="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"
+                android:background="@color/them_color"
+                android:src="@mipmap/gray3"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.jiarui.znxj.activity.PatrolSettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/them_color">
+
+        <TextView
+            android:id="@+id/common_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/fanhui_bai"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_padding_medium"
+            android:paddingRight="@dimen/common_padding_super_large"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15sp" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="巡检点设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_font_title" />
+
+        <TextView
+            android:id="@+id/setting_bc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/juli_15dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_font_large" />
+    </RelativeLayout>
+
+    <View style="@style/style_line_horizontal15" />
+
+    <LinearLayout
+        android:id="@+id/setting_btsk"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_weight="1"
+            android:text="水库名称"
+            android:textColor="#494949"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/setting_akmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_marginRight="@dimen/juli_15dp"
+            android:text="水库"
+            android:textColor="#858585"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/style_line_horizontal"
+        android:layout_marginLeft="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_weight="1"
+            android:text="点位名称"
+            android:textColor="#494949"
+            android:textSize="@dimen/text_16sp" />
+
+        <EditText
+            android:id="@+id/setting_dwmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_marginRight="@dimen/juli_15dp"
+            android:background="@null"
+            android:textColor="#858585"
+            android:textCursorDrawable="@drawable/line"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal15" />
+
+    <LinearLayout
+        android:id="@+id/setting_btgcw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_weight="1"
+                android:text="观测物"
+                android:textColor="#494949"
+                android:textSize="@dimen/text_16sp" />
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/setting_upordown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginRight="@dimen/juli_15dp"
+                android:background="@mipmap/more_icon" />
+        </LinearLayout>
+
+        <com.jiarui.znxj.flow.TagFlowLayoutALL
+            android:id="@+id/id_flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            app:max_select="-1" />
+
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_marginTop="@dimen/juli_15dp"
+            android:layout_weight="1"
+            android:text="GPS位置"
+            android:textColor="#494949"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="5dp"
+                android:text="纬度 :  "
+                android:textColor="#494949"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/setting_wd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/juli_15dp"
+                android:layout_marginTop="5dp"
+                android:text=""
+                android:textColor="#858585"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/juli_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="5dp"
+                android:text="经度 :  "
+                android:textColor="#494949"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/setting_jd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/juli_15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/style_line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_weight="1"
+            android:text="标识卡"
+            android:textColor="#494949"
+            android:textSize="@dimen/text_16sp" />
+
+        <EditText
+            android:id="@+id/patrol_bsk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:layout_marginRight="@dimen/juli_15dp"
+            android:hint="请输入当前标示卡号"
+            android:textCursorDrawable="@drawable/line"
+            android:background="@null"
+            android:textColor="#858585"
+            android:textSize="@dimen/text_14sp" />
+    </LinearLayout>
+
+</LinearLayout>

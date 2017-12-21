@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/juli_15dp"
+        android:layout_marginBottom="@dimen/juli_15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_item_data"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/text_bk"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="09-02-09:37"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/select_bk"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/report_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="湾里幸福水库"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/juli_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="巡检点位 : "
+                android:textColor="#949494"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/report_item_dianwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点位1"
+                android:textColor="#949494"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/juli_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="检查项目 : "
+                android:textColor="#949494"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/report_item_jiancha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="呗体检查"
+                android:textColor="#949494"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/juli_15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务完成时间 : "
+                android:textColor="#949494"
+                android:textSize="@dimen/text_14sp" />
+
+            <TextView
+                android:id="@+id/report_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColor="#949494"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/style_line_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="@dimen/juli_15dp">
+
+            <TextView
+                android:id="@+id/report_ckxq"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/text_bk2"
+                android:gravity="center"
+                android:text="查看详情"
+                android:textColor="#505050"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <com.jiarui.znxj.widget.ViewFlow
+                android:id="@+id/vf"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <com.jiarui.znxj.widget.CircleFlowIndicator
+                android:id="@+id/cfi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/common_padding_medium2"
+                app:activeColor="#eeee00"
+                app:activeType="fill"
+                app:centered="true"
+                app:circleSeparation="15dp"
+                app:inactiveColor="#000000"
+                app:inactiveType="fill"
+                app:radius="3dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

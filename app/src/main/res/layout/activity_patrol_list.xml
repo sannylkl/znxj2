@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.jiarui.znxj.activity.PatrolListActivity">
+
+    <include layout="@layout/common_layout_title" />
+
+    <View style="@style/style_line_horizontal15" />
+
+    <ListView
+        android:id="@+id/patrol_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent" />
+
+    <View style="@style/style_line_horizontal15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patrol_tjxjd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/add"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="添加巡检点"
+            android:textColor="@color/them_color"
+            android:textSize="@dimen/topbar_textSize" />
+    </LinearLayout>
+</LinearLayout>

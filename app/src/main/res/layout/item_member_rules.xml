@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_group_name_itme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_weight="1"
+                android:text="坝体"
+                android:textSize="@dimen/text_15sp" />
+
+
+            <TextView
+                android:id="@+id/tv_group_name_itme_rigth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:text="异常"
+                android:textSize="@dimen/common_font_medium" />
+
+            <ImageView
+                android:id="@+id/task_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/juli_15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/juli_15dp"
+                    android:drawableLeft="@mipmap/abnormal_nomar"
+                    android:drawablePadding="5dp"
+                    android:text="异常问题"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rules_ycwt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#989898"
+                android:text="有渗水"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/juli_15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/juli_15dp"
+                    android:drawableLeft="@mipmap/device_nomar"
+                    android:drawablePadding="5dp"
+                    android:text="设备运状况"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rules_sbzk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#989898"
+                android:text="有渗水"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/juli_15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/juli_15dp"
+                    android:drawableLeft="@mipmap/repeat_icon"
+                    android:drawablePadding="5dp"
+                    android:text="重复问题"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rules_cfwt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#989898"
+                android:text="有渗水"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/juli_15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/juli_15dp"
+                    android:drawableLeft="@mipmap/describe_icon"
+                    android:drawablePadding="5dp"
+                    android:text="其它描述"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rules_qtms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#989898"
+                android:text="有渗水"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/juli_15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/juli_15dp"
+                    android:drawableLeft="@mipmap/picture_icon"
+                    android:drawablePadding="5dp"
+                    android:text="照片/视频"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_15sp" />
+            </LinearLayout>
+            <com.jiarui.znxj.widget.CustomGridView
+                android:id="@+id/lv_title_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="@dimen/juli_15dp"
+                android:background="@android:color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="3dp"
+                android:fadingEdge="none"
+                android:horizontalSpacing="5dp"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:overScrollMode="never" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/juli_15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/juli_15dp"
+                    android:drawableLeft="@mipmap/record_nomar"
+                    android:drawablePadding="5dp"
+                    android:text="录音"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/text_15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

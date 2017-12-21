@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="1"
+                    android:text="巡检类型"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_xjlx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="日常巡检"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_horizontal"
+                android:layout_marginLeft="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="1"
+                    android:text="检查项目"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_jcxm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="坝体、坝基和坝区"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_horizontal"
+                android:layout_marginLeft="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="1"
+                    android:text="发布人"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_fbr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="李刑讯"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_horizontal"
+                android:layout_marginLeft="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="1"
+                    android:text="任务开始日期"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_starttime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="08-22"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <View
+                style="@style/style_line_horizontal"
+                android:layout_marginLeft="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="1"
+                    android:text="要求完成日期"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_endtime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="08-24"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="位       置："
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_wz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="5"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="水       位："
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_sw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="5"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="天       气："
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_tq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="5"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:layout_weight="2"
+                    android:text="下游水位："
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/see_xysw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:layout_weight="5"
+                    android:text="暂无数据"
+                    android:textSize="@dimen/common_font_medium" />
+            </LinearLayout>
+
+            <View style="@style/style_line_horizontal15"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="路线规划："
+                android:textSize="@dimen/common_font_medium" />
+
+            <com.jiarui.znxj.widget.ListViewForScrollView
+                android:id="@+id/task_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:divider="@color/white"
+                android:dividerHeight="0dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

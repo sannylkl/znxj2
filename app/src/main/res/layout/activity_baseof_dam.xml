@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/r1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.jiarui.znxj.activity.BaseofDamActivity">
+
+    <include layout="@layout/common_layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_check_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/text_width2"
+                android:layout_marginRight="@dimen/text_width2"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="检查内容"
+                android:textSize="@dimen/common_font_medium" />
+
+            <RadioGroup
+                android:id="@+id/baseof_grouprad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/baseof_rad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/personal_sex_checkbox"
+                    android:drawablePadding="5dp"
+                    android:text="正常"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/common_font_medium" />
+
+                <RadioButton
+                    android:id="@+id/baseof_rad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/personal_sex_checkbox"
+                    android:drawablePadding="5dp"
+                    android:text="异常"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/common_font_medium" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:id="@+id/personal_yhk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:text="设备运转情况"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioGroup
+                    android:id="@+id/equipment_status_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/baseof_zc"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/text_width2"
+                        android:layout_marginRight="@dimen/juli_15dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/personal_sex_checkbox"
+                        android:drawablePadding="5dp"
+                        android:text="正常"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/common_font_medium" />
+
+                    <RadioButton
+                        android:id="@+id/baseof_yc"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/text_width2"
+                        android:layout_marginRight="@dimen/juli_15dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/personal_sex_checkbox"
+                        android:drawablePadding="5dp"
+                        android:text="异常"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/common_font_medium" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:text="重复问题"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <RadioGroup
+                    android:id="@+id/repeat_status_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/baseof_s"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/text_width2"
+                        android:layout_marginRight="@dimen/juli_15dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/personal_sex_checkbox"
+                        android:drawablePadding="5dp"
+                        android:text="是"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/common_font_medium" />
+
+                    <RadioButton
+                        android:id="@+id/baseof_f"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/text_width2"
+                        android:layout_marginRight="@dimen/juli_15dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/personal_sex_checkbox"
+                        android:drawablePadding="5dp"
+                        android:text="否"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/common_font_medium" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/baseof_linear_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.jiarui.znxj.flow.TagFlowLayoutALL
+                        android:id="@+id/flow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/leave_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/edit"
+                    android:gravity="top"
+                    android:hint="其他描述"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:textColorHint="@color/color_gray"
+                    android:textCursorDrawable="@drawable/line"
+                    android:textSize="@dimen/common_font_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/color_white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="照片"
+                    android:textSize="@dimen/text_15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:overScrollMode="never"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="视频"
+                    android:textSize="@dimen/text_15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:overScrollMode="never"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/color_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_width2"
+                    android:text="录音"
+                    android:textSize="@dimen/text_15sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/baseof_ksly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:drawableLeft="@mipmap/record"
+                    android:drawablePadding="5dp"
+                    android:text="开始录音"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/common_font_medium" />
+
+                <ImageView
+                    android:id="@+id/img_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/text_width2"
+                    android:background="@color/them_color"
+                    android:padding="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/gray3"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="50dp"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/text_blue"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:text="提交上报"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

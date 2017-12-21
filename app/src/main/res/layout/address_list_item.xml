@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <com.jiarui.znxj.widget.CircleImageView
+            android:id="@+id/address_item_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/juli_15dp"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/address_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:text="小李"
+                android:textColor="#939393"
+                android:textSize="@dimen/text_15sp" />
+
+            <TextView
+                android:id="@+id/address_item_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/juli_15dp"
+                android:layout_marginTop="10dp"
+                android:text="13767647725"
+                android:textColor="#9C9C9C"
+                android:textSize="@dimen/text_15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
